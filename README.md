@@ -1,4 +1,6 @@
-# Marlin 3D Printer Firmware
+# Marlin 3D Printer Firmware (Customised for Creality CR-10 v1)
+
+To see a list of changes, open CR10-CHANGES.md.
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
 ![GitHub contributors](https://img.shields.io/github/contributors/marlinfirmware/marlin.svg)
