@@ -534,7 +534,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 285  // Set 300 for hot tightening as settable temperature on the LCD is 15 less than the max temperature.
+#define HEATER_0_MAXTEMP 300  // Set 300 for hot tightening as settable temperature on the LCD is 15 less than the max temperature.
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -572,17 +572,17 @@
   //#define PID_PARAMS_PER_HOTEND // Uses separate PID parameters for each extruder (useful for mismatched extruders)
                                   // Set/get with gcode: M301 E[extruder number, 0-2]
 
-  // Default Marlin values
+  // Values tuned for E3D V6
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify between 1 and HOTENDS values per array.
     // If fewer than EXTRUDER values are provided, the last element will be repeated.
-    #define DEFAULT_Kp_LIST {  22.57,  22.57 }
-    #define DEFAULT_Ki_LIST {   1.72,   1.72 }
-    #define DEFAULT_Kd_LIST {  73.96,  73.96 }
+    #define DEFAULT_Kp_LIST {  28.53,  28.53 }
+    #define DEFAULT_Ki_LIST {   2.26,   2.26 }
+    #define DEFAULT_Kd_LIST {  89.99,  89.99 }
   #else
-    #define DEFAULT_Kp  22.57
-    #define DEFAULT_Ki   1.72
-    #define DEFAULT_Kd  73.96
+    #define DEFAULT_Kp 28.53
+    #define DEFAULT_Ki 2.26
+    #define DEFAULT_Kd 89.99
   #endif
 #endif // PIDTEMP
 
