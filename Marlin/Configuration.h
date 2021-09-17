@@ -534,7 +534,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 300  // Set 300 for hot tightening as settable temperature on the LCD is 15 less than the max temperature.
+#define HEATER_0_MAXTEMP 285  // Set 300 for hot tightening as settable temperature on the LCD is 15 less than the max temperature.
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
